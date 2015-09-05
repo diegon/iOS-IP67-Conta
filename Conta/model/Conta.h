@@ -10,8 +10,9 @@
 
 @interface Conta : NSObject
 
-@property double saldo;
+@property (readonly) double saldo;
 -(void)deposita: (double) valor;
--(void)saca: (double) valor;
+-(BOOL)saca: (double) valor;
+-(BOOL)transfereOValor: (double) valor paraODestino: (Conta *) destino;
 
 @end

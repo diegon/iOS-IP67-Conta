@@ -19,6 +19,13 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.cc = [Conta new];
+    self.cp = [Conta new];
+    
+    [self.cc deposita:50];
+    [self.cc transfereOValor:10 paraODestino:self.cp];
+    
+    NSLog(@"%@", [NSString stringWithFormat:@"R$ %.2f", self.cp.saldo]);
+    
     self.valor.text = @"10.00";
     [self atualizaSaldoNaTela];
 }

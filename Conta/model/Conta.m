@@ -11,11 +11,24 @@
 @implementation Conta
 
 -(void)deposita: (double) valor {
-    self.saldo += valor;
+    _saldo += valor;
 }
 
--(void)saca: (double) valor {
-    self.saldo -= valor;
+-(BOOL)saca: (double) valor {
+    if(self.saldo >= valor) {
+        _saldo -= valor;
+        return YES;
+    }
+    return NO;
+}
+
+-(BOOL)transfereOValor: (double) valor paraODestino: (Conta *) destino {
+    BOOL sucesso = [self saca: valor];
+    if(sucesso) {
+        [destino deposita: valor];
+        return YES;
+    }
+    return NO;
 }
 
 @end

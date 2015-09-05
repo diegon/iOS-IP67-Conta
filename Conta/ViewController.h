@@ -11,9 +11,10 @@
 
 @interface ViewController : UIViewController
 
-@property IBOutlet UILabel *saldoNaTela;
-@property IBOutlet UITextField *valor;
-@property Conta *cc;
+@property (weak,nonatomic) IBOutlet UILabel *saldoNaTela;
+@property (weak,nonatomic) IBOutlet UITextField *valor;
+@property (strong,nonatomic) Conta *cc;
+@property (strong,nonatomic) Conta *cp;
 
 @end
 
