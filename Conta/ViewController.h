@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Conta.h"
 
 @interface ViewController : UIViewController
 
 @property IBOutlet UILabel *saldoNaTela;
 @property IBOutlet UITextField *valor;
-@property double saldo;
+@property Conta *cc;
 
 @end
 

@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.saldo = 5;
+    self.cc = [Conta new];
     self.valor.text = @"10.00";
     [self atualizaSaldoNaTela];
 }
@@ -30,18 +30,18 @@
 
 - (IBAction)efetuarSaque {
     double valor = [self.valor.text doubleValue];
-    self.saldo -= valor;
+    [self.cc saca: valor];
     [self atualizaSaldoNaTela];
 }
 
 - (IBAction)efetuarDeposito {
     double valor = [self.valor.text doubleValue];
-    self.saldo += valor;
+    [self.cc deposita: valor];
     [self atualizaSaldoNaTela];
 }
 
 - (void)atualizaSaldoNaTela {
-    self.saldoNaTela.text = [NSString stringWithFormat:@"R$ %.2f", self.saldo];
+    self.saldoNaTela.text = [NSString stringWithFormat:@"R$ %.2f", self.cc.saldo];
 }
 
 @end

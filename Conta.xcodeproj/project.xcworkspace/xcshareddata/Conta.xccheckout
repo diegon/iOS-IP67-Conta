@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C6F5970D-AF1B-49A5-8C7E-0D8E86289CE1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AC31C5661F3768F274863D8AE66B3E1F7F6ED5D8</key>
+		<string>https://bitbucket.org/diegon/contaip67.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Conta.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AC31C5661F3768F274863D8AE66B3E1F7F6ED5D8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/diegon/contaip67.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AC31C5661F3768F274863D8AE66B3E1F7F6ED5D8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AC31C5661F3768F274863D8AE66B3E1F7F6ED5D8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Conta</string>
+		</dict>
+	</array>
+</dict>
+</plist>

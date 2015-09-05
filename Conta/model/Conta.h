@@ -10,4 +10,8 @@
 
 @interface Conta : NSObject
 
+@property double saldo;
+-(void)deposita: (double) valor;
+-(void)saca: (double) valor;
+
 @end

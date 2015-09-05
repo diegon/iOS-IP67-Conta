@@ -14,7 +14,7 @@
 		E1CC2F551B9B539000CF8EA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1CC2F541B9B539000CF8EA3 /* Images.xcassets */; };
 		E1CC2F581B9B539000CF8EA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CC2F561B9B539000CF8EA3 /* LaunchScreen.xib */; };
 		E1CC2F641B9B539000CF8EA3 /* ContaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CC2F631B9B539000CF8EA3 /* ContaTests.m */; };
-		E1CC2F6F1B9B5F2300CF8EA3 /* Conta.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CC2F6E1B9B5F2300CF8EA3 /* Conta.m */; };
+		E1CC2F731B9B637100CF8EA3 /* Conta.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CC2F721B9B637100CF8EA3 /* Conta.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		E1CC2F5D1B9B539000CF8EA3 /* ContaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CC2F621B9B539000CF8EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1CC2F631B9B539000CF8EA3 /* ContaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContaTests.m; sourceTree = "<group>"; };
-		E1CC2F6D1B9B5F2300CF8EA3 /* Conta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conta.h; sourceTree = "<group>"; };
-		E1CC2F6E1B9B5F2300CF8EA3 /* Conta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conta.m; sourceTree = "<group>"; };
+		E1CC2F711B9B637100CF8EA3 /* Conta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Conta.h; path = model/Conta.h; sourceTree = "<group>"; };
+		E1CC2F721B9B637100CF8EA3 /* Conta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Conta.m; path = model/Conta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +84,11 @@
 		E1CC2F461B9B539000CF8EA3 /* Conta */ = {
 			isa = PBXGroup;
 			children = (
+				E1CC2F741B9B637C00CF8EA3 /* model */,
 				E1CC2F4B1B9B539000CF8EA3 /* AppDelegate.h */,
 				E1CC2F4C1B9B539000CF8EA3 /* AppDelegate.m */,
 				E1CC2F4E1B9B539000CF8EA3 /* ViewController.h */,
 				E1CC2F4F1B9B539000CF8EA3 /* ViewController.m */,
-				E1CC2F6D1B9B5F2300CF8EA3 /* Conta.h */,
-				E1CC2F6E1B9B5F2300CF8EA3 /* Conta.m */,
 				E1CC2F511B9B539000CF8EA3 /* Main.storyboard */,
 				E1CC2F541B9B539000CF8EA3 /* Images.xcassets */,
 				E1CC2F561B9B539000CF8EA3 /* LaunchScreen.xib */,
@@ -122,6 +121,15 @@
 				E1CC2F621B9B539000CF8EA3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1CC2F741B9B637C00CF8EA3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC2F711B9B637100CF8EA3 /* Conta.h */,
+				E1CC2F721B9B637100CF8EA3 /* Conta.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +235,7 @@
 				E1CC2F501B9B539000CF8EA3 /* ViewController.m in Sources */,
 				E1CC2F4D1B9B539000CF8EA3 /* AppDelegate.m in Sources */,
 				E1CC2F4A1B9B539000CF8EA3 /* main.m in Sources */,
-				E1CC2F6F1B9B5F2300CF8EA3 /* Conta.m in Sources */,
+				E1CC2F731B9B637100CF8EA3 /* Conta.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

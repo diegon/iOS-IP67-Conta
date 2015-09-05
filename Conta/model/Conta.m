@@ -10,4 +10,12 @@
 
 @implementation Conta
 
+-(void)deposita: (double) valor {
+    self.saldo += valor;
+}
+
+-(void)saca: (double) valor {
+    self.saldo -= valor;
+}
+
 @end
