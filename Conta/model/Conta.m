@@ -27,6 +27,17 @@
     _saldo += valor;
 }
 
+// Construtor
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _saldo = 50;
+    }
+    return self;
+}
+// --
+
 -(BOOL)saca: (double) valor {
     if(self.saldo >= valor) {
         _saldo -= valor;
