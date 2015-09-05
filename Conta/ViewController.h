@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property IBOutlet UILabel *saldoNaTela;
+@property IBOutlet UITextField *valor;
+@property double saldo;
 
 @end
 

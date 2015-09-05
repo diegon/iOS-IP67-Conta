@@ -17,11 +17,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.saldo = 5;
+    self.valor.text = @"10.00";
+    [self atualizaSaldoNaTela];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)efetuarSaque {
+    double valor = [self.valor.text doubleValue];
+    self.saldo -= valor;
+    [self atualizaSaldoNaTela];
+}
+
+- (IBAction)efetuarDeposito {
+    double valor = [self.valor.text doubleValue];
+    self.saldo += valor;
+    [self atualizaSaldoNaTela];
+}
+
+- (void)atualizaSaldoNaTela {
+    self.saldoNaTela.text = [NSString stringWithFormat:@"R$ %.2f", self.saldo];
 }
 
 @end
