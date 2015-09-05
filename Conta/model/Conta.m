@@ -8,7 +8,20 @@
 
 #import "Conta.h"
 
-@implementation Conta
+// Criando atributo, getter e setter na mão.
+@implementation Conta {
+    
+    NSString *_titular; // atributos sao chamados de eVar
+    
+}
+
+-(NSString *)titular {
+    return _titular;
+}
+
+-(void)setTitular: (NSString *) titular {
+    _titular = titular;
+}
 
 -(void)deposita: (double) valor {
     _saldo += valor;

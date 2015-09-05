@@ -14,5 +14,6 @@
 -(void)deposita: (double) valor;
 -(BOOL)saca: (double) valor;
 -(BOOL)transfereOValor: (double) valor paraODestino: (Conta *) destino;
+//@property (strong, nonatomic) NSString *titular;
 
 @end
